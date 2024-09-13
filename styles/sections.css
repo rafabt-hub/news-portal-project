@@ -25,7 +25,7 @@ section header {
     height: 100%;
     object-fit: cover;
   }
-}
+
 
 .card {
   border-radius: 4px;
@@ -59,6 +59,7 @@ section header {
     }
   }
 }
+}
 
 #weekly {
   grid-area: weekly;
@@ -89,6 +90,7 @@ section header {
 
 #ai {
   grid-area: ai;
+  
   img {
     width: 176px;
     aspect-ratio: 1/1;
