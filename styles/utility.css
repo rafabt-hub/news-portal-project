@@ -33,3 +33,14 @@
 .text-sm {
   font: var(--text-sm);
 }
+
+@media (max-width: 768px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+}

@@ -119,3 +119,139 @@ aside {
     object-fit: cover;
   }
 }
+
+@media (max-width: 768px) {
+
+  #primary {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #secondary {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #featured {
+    img {
+      width: 328px;
+      height: 416px;
+      object-fit: cover;
+      border-radius: .5rem;
+    }
+  }
+
+  .card {
+    margin: .5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 100%;
+    display: block;
+  }
+  
+  .card figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+  }
+
+  #featured .grid.grid-cols-2 .card img {
+    height: auto;
+    max-height: 200px; 
+    object-fit: cover;
+  }
+  #weekly > header {
+    display: flex;
+    align-items: center; 
+  }
+  
+  #weekly > header a {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+  
+  #weekly .grid {
+    display: grid;  
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  #weekly .grid figure img {
+    width: 100%; 
+    max-width: 328px;
+    height: 160px; 
+    object-fit: cover;
+    margin-bottom: 10px; 
+  }
+  
+  #weekly .grid figure .content-tag {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 4px 8px; 
+  }
+  
+  #weekly figure {
+    position: relative;
+  }
+  
+  #ai > header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #ai > header a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    font-size: 14px;
+  }
+  
+  #ai img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  #ai > .grid article {
+    display: grid;
+    grid-template-columns: 80px auto;
+    gap: 16px;
+    align-items: start;
+    margin-bottom: 2rem;
+  }
+  
+  #ads img {
+   width: 328px;
+   height: 189px;
+   margin-bottom: 2rem;
+   margin-top: 1rem;
+  }
+  
+  #more header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    & a {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  
+  #more article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #more div {
+  
+  }
+}

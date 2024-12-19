@@ -1,4 +1,5 @@
 #primary {
+  justify-content: space-between;
   padding-block: 20px;
 
   div:nth-child(2) {
@@ -21,4 +22,38 @@
   border: solid 1px var(--stroke-color);
   border-inline: none;
   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  #primary {
+    & div:nth-child(2) {
+      & img {
+        width: 100px;
+        height: 20px;
+      }
+    }
+
+    & strong {
+      display: none;
+    }
+  }
+
+  #secondary {
+    
+    & a:nth-child(4) {
+      display: none;
+    }
+
+    & a:nth-child(5) {
+      display: none;
+    }
+
+    & a:nth-child(6) {
+      display: none;
+    }
+
+    & a:nth-child(7) {
+      display: none;
+    }
+  }
 }

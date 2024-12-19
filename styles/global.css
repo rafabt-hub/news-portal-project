@@ -74,3 +74,33 @@ main {
   color: var(--text-color-primary);
   box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.25);
 }
+
+.desktop-text {
+  display: block;
+}
+
+.mobile-text {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  #featured {
+    display: flex;
+    flex-direction: column;
+   
+          
+    & .h2 {
+      font-size: 24px;
+    }
+  }
+
+  .desktop-text {
+    display: none;
+  }
+  
+  .mobile-text {
+    display: block;
+  }
+
+}
