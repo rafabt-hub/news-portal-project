@@ -220,15 +220,7 @@ aside {
     width: 80px;
     height: 80px;
   }
-  
-  #ai > .grid article {
-    display: grid;
-    grid-template-columns: 80px auto;
-    gap: 16px;
-    align-items: start;
-    margin-bottom: 2rem;
-  }
-  
+      
   #ads img {
    width: 328px;
    height: 189px;
@@ -246,12 +238,28 @@ aside {
     }
   }
   
-  #more article {
+  #ai > .grid article {
+    gap: 16px;
+    align-items: start;
+    margin-bottom: 2rem;
+    grid-template-columns: 3fr 1fr;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+    grid-auto-flow: dense;
+    text-align: left;
+    direction: rtl;
+}
 
-  #more div {
-  
-  }
+.text-container {
+  direction: ltr;
+}
+
+#more > .grid article {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+h3.text-xl {
+  font-size: 14px;
+}
+
 }

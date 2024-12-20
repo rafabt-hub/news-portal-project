@@ -102,5 +102,8 @@ main {
   .mobile-text {
     display: block;
   }
+  main {
+    margin-block: 0;
+  }
 
 }
